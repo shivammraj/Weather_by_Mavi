@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Weather by Mavi</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <div class="app">
+    <h1>🌦Weather by Mavi❤️</h1>
+    <h5>Type city name to get weather info</h5>
+
+    <div class="search-box">
+      <input 
+        type="text" 
+        id="cityInput" 
+        placeholder="Enter city name"
+        onkeypress="handleKey(event)"
+      />
+      <button onclick="getWeather()">Search</button>
+    </div>
+
+    <p id="error"></p>
+
+    <div class="weather" id="weatherBox">
+      <h2 id="city"></h2>
+      <img id="icon" />
+      <p id="temp"></p>
+      <p id="condition"></p>
+      <p id="humidity"></p>
+      <p id="wind"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
